@@ -1,2 +1,5 @@
 # WikiPedia-Navigator
-Random and/or Search
+
+Random article generator and/or Search Function
+
+FreeCodeCamp assignment
