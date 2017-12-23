@@ -1,44 +1,40 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="main.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>Weather Report</title>
-</head>
-
-<body>
-  <h1 class="title text-center"><strong>Your Weather Report</strong></h1>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <h3 id="gps"></h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <span id="icon"></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p id="temp"></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <button class="btn" id="units">Switch to Far</button>
-      </div>
-    </div>
-  </div>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="main.js"></script>
-</body>
-
-
+	<head>
+	  <title>Wiki Navigator</title>
+	  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <link rel="stylesheet" type="text/css" href="main.css"/>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+	</head>
+	
+	<body>
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-12">
+			<a id="random" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">Explore a Random Wikipedia Article</a>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 searchBar">
+			<button id="search"><i class="fa fa-search fa-4x" aria-hidden="true"></i></button>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12">
+			<p id="instructions">~ or ~ <br> Use the Magnifying Glass</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12">
+			<ul id="list" class="list-unstyled"></ul>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="main.js"></script>
+	</body>
 </html>
